@@ -1,0 +1,26 @@
+@import "../../styles/abstracts/functions";
+@import "../../styles/abstracts/variables";
+@import "../../styles/abstracts/mixins";
+@import "../../styles/base/typography";
+
+.notification {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: toRem(26px) toRem(19px) 0 toRem(19px);
+  border-left: 2px solid $col-grey-light;
+
+  &__item {
+    text-align: left;
+    border-bottom: 1px solid $col-grey-light;
+    padding-top: toRem(26px);
+  }
+  &__title {
+    @include title;
+    text-transform: uppercase;
+    margin-bottom: toRem(8px);
+  }
+  &__text {
+    @include text-small;
+    color: $col-grey;
+  }
+}

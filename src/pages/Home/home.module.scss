@@ -1,0 +1,9 @@
+@import "../../styles/abstracts/functions";
+@import "../../styles/abstracts/variables";
+@import "../../styles/abstracts/mixins";
+
+.home {
+  display: grid;
+  grid-template-columns: toRem(232px) 1fr toRem(350px);
+  height: 100vh;
+}
