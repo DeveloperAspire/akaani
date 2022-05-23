@@ -47,3 +47,16 @@
   line-height: toRem(21px);
   letter-spacing: 0em;
 }
+@mixin stats-text {
+  font-size: toRem(14px);
+  font-weight: 400;
+  line-height: toRem(18px);
+  letter-spacing: 0em;
+}
+
+@mixin stats-value {
+  font-size: toRem(22px);
+  font-weight: 600;
+  line-height: toRem(33px);
+  letter-spacing: 0em;
+}

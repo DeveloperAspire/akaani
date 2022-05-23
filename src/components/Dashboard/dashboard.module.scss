@@ -16,4 +16,11 @@
   &__title {
     @include h1;
   }
+
+  &__stats{
+        margin-top: toRem(25px);
+        display: grid;
+        grid-template-columns: repeat(4, toRem(240px));
+        column-gap: toRem(35px);
+  }
 }
