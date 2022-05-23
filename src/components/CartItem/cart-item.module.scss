@@ -4,7 +4,6 @@
 @import "../../styles/base/typography";
 
 .cart-item {
-  // height: toRem(110px);
   border-radius: toRem(13px);
   background-color: $col-light-blue;
   padding: toRem(23px) toRem(20px);
@@ -21,8 +20,7 @@
     padding: toRem(15px);
     background-color: $col-blue;
   }
-  &__details {
-  }
+
   &__quantity {
     & select {
       width: toRem(100px);

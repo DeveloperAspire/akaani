@@ -2,11 +2,23 @@ import { Icon, Button, CartItem } from "../";
 
 import styles from "./cart.module.scss";
 
-const Cart = () => {
+interface CartProps {
+  showCart: boolean;
+  displayCart: () => void;
+}
+
+const Cart: React.FC<CartProps> = ({ showCart, displayCart }) => {
+  const classname = showCart
+    ? `${styles["cart"]} ${styles["cart--show"]}`
+    : `${styles["cart"]}`;
+
   return (
-    <div className={styles["cart"]}>
+    <div className={classname}>
       <div className={styles["cart__header"]}>
-        <Icon iconName="arrowLeft" />
+        <span onClick={displayCart}>
+          <Icon iconName="arrowLeft" />
+        </span>
+
         <h3>My Cart</h3>
         <Button
           ariaLabel="cart"
