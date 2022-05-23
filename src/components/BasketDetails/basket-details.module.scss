@@ -1,0 +1,13 @@
+@import "../../styles/abstracts/functions";
+@import "../../styles/abstracts/variables";
+@import "../../styles/abstracts/mixins";
+@import "../../styles/base/typography";
+
+.basket-details {
+  margin-top: toRem(50px);
+
+  &__header {
+  }
+  &__title {
+  }
+}

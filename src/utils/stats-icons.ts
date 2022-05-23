@@ -4,11 +4,6 @@ interface styleType {
   [key: string]: string;
 }
 
-interface IconStyleProps {
-  icon: IconType;
-  styles: styleType;
-}
-
 export const iconStyle = (icon: IconType, styles: styleType) => {
   let classname;
 

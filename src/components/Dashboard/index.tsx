@@ -1,5 +1,5 @@
 import styles from "./dashboard.module.scss";
-import { SearchInput, StatsCard } from "../";
+import { SearchInput, StatsCard, BasketDetails } from "../";
 
 const Dashboard = () => {
   return (
@@ -35,6 +35,8 @@ const Dashboard = () => {
           monetary={false}
         />
       </div>
+
+      <BasketDetails />
     </div>
   );
 };

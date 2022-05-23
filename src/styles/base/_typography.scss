@@ -9,6 +9,13 @@
   letter-spacing: 0em;
 }
 
+@mixin h2 {
+  font-size: toRem(24px);
+  font-weight: 600;
+  line-height: toRem(36px);
+  letter-spacing: 0em;
+}
+
 @mixin initials {
   font-size: toRem(28px);
   font-weight: 700;
@@ -58,5 +65,17 @@
   font-size: toRem(22px);
   font-weight: 600;
   line-height: toRem(33px);
+  letter-spacing: 0em;
+}
+@mixin btn-text {
+  font-size: toRem(12px);
+  font-weight: 500;
+  line-height: toRem(18px);
+  letter-spacing: 0em;
+}
+@mixin btn-text-large {
+  font-size: toRem(15px);
+  font-weight: 700;
+  line-height: toRem(23px);
   letter-spacing: 0em;
 }

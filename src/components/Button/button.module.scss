@@ -1,0 +1,36 @@
+@import "../../styles/abstracts/functions";
+@import "../../styles/abstracts/variables";
+@import "../../styles/abstracts/mixins";
+@import "../../styles/base/typography";
+
+.button {
+  background-color: $col-primary;
+  color: $col-white;
+  padding: toRem(10px) 0;
+  border-radius: toRem(4px);
+
+  & svg path {
+    fill: $col-white;
+  }
+
+  &--primary {
+    width: toRem(130px);
+    @include btn-text;
+  }
+  &--cart {
+    height: toRem(62px);
+    width: toRem(62px);
+    border-radius: 50%;
+    box-shadow: -1px 3px 22px 3px rgba(141, 152, 152, 0.7);
+
+    & svg {
+      transform: scale(1.5);
+    }
+  }
+  &--large {
+    height: toRem(40px);
+    width: toRem(179px);
+    text-transform: uppercase;
+    @include btn-text-large;
+  }
+}

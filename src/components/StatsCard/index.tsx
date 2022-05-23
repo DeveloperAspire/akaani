@@ -1,6 +1,6 @@
 import { Icon } from "../";
 import { IconType } from "../../utils/icon";
-import { iconStyle } from "../../utils/stats-icon";
+import { iconStyle } from "../../utils/stats-icons";
 import styles from "./stats-card.module.scss";
 
 interface StatsCardProps {
