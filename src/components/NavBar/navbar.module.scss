@@ -1,0 +1,90 @@
+@import "../../styles/abstracts/functions";
+@import "../../styles/abstracts/variables";
+@import "../../styles/abstracts/mixins";
+@import "../../styles/base/typography";
+
+.navbar {
+  padding: toRem(50px) toRem(34px);
+  border-right: 2px solid $col-grey-light;
+  display: grid;
+  grid-template-rows: toRem(120px) 1fr 1fr;
+
+  &__links {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    padding: toRem(15px) toRem(20px);
+    width: 100%;
+    margin-bottom: toRem(20px);
+    transition: all 0.2s linear;
+
+    &:hover {
+      background-color: $col-primary;
+      border-radius: toRem(7px);
+
+      & span {
+        color: $col-white;
+      }
+
+      & svg path {
+        fill: $col-white;
+      }
+    }
+
+    & span {
+      color: $col-grey-3;
+    }
+
+    & svg {
+      margin-right: toRem(12px);
+    }
+
+    &--active {
+      background-color: $col-primary;
+      border-radius: toRem(7px);
+
+      & span {
+        color: $col-white;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__profile {
+    align-self: end;
+    text-align: center;
+
+    &-img {
+      @include initials;
+      border-radius: 50%;
+      background-color: $col-primary-dark;
+      color: $col-white;
+      display: grid;
+      place-items: center;
+      width: toRem(60px);
+      height: toRem(60px);
+      margin: toRem(5px) auto;
+    }
+    &-name {
+      @include text-small-2;
+      margin-bottom: toRem(3px);
+    }
+    &-email {
+      color: $col-grey-light-2;
+    }
+  }
+
+  &__logout {
+    width: toRem(40px);
+    height: toRem(40px);
+    border-radius: toRem(5px);
+    border: 1px solid $col-grey-light-5;
+    display: grid;
+    place-items: center;
+    margin: toRem(18px) auto;
+  }
+}
