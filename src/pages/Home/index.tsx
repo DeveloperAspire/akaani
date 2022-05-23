@@ -1,4 +1,4 @@
-import { Dashboard, NotificationBar, NavBar } from "../../components";
+import { Dashboard, NotificationBar, NavBar, Cart } from "../../components";
 import styles from "./home.module.scss";
 
 const Home = () => {
@@ -7,6 +7,7 @@ const Home = () => {
       <NavBar />
       <Dashboard />
       <NotificationBar />
+      <Cart />
     </main>
   );
 };
