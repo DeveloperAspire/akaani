@@ -6,3 +6,4 @@ export { default as SearchInput } from "./SearchInput";
 export { default as StatsCard } from "./StatsCard";
 export { default as BasketDetails } from "./BasketDetails";
 export { default as Button } from "./Button";
+export { default as BasketTabs } from "./BasketTabs";

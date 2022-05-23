@@ -1,0 +1,89 @@
+@import "../../styles/abstracts/functions";
+@import "../../styles/abstracts/variables";
+@import "../../styles/abstracts/mixins";
+@import "../../styles/base/typography";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: toRem(20px);
+
+  &__tabs {
+    padding: 15px;
+    text-align: center;
+    width: 50%;
+    cursor: pointer;
+    box-sizing: content-box;
+    position: relative;
+    text-align: left;
+    outline: none;
+    @include tab-text;
+    color: $col-grey-light-2;
+  }
+
+  &__active-tabs {
+    border-bottom: 1px solid transparent;
+    color: $col-primary-light;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% + 2px);
+      height: 3px;
+      background: $col-primary-light;
+    }
+  }
+
+  &__bloc-tabs {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  }
+  &__tabs-group {
+    display: flex;
+    width: 25%;
+  }
+
+  &__content-tabs {
+    flex-grow: 1;
+  }
+  &__content {
+    background: white;
+    padding: 20px;
+    width: 100%;
+    padding: toRem(79px);
+    height: 100%;
+    display: none;
+    text-align: center;
+
+    &--icon {
+      height: toRem(90px);
+      width: toRem(90px);
+      border-radius: 50%;
+      padding: toRem(12px);
+      display: grid;
+      place-items: center;
+      margin: 0 auto;
+      background-color: lighten($col-cyan, 40%);
+      & svg path {
+        fill: $col-cyan;
+      }
+      & svg {
+        transform: scale(1.7);
+      }
+    }
+
+    & p {
+      @include tab-content-text;
+      color: $col-grey;
+      margin-top: toRem(9px);
+    }
+  }
+
+  &__active-content {
+    display: block;
+  }
+}

@@ -1,11 +1,11 @@
-import { Button } from "../";
+import { Button, BasketTabs } from "../";
 import styles from "./basket-details.module.scss";
 
 const BasketDetails = () => {
   return (
     <section className={styles["basket-details"]}>
       <div className={styles["basket-details__header"]}>
-        <h2>Baskets</h2>
+        <h2 className={styles["basket-details__title"]}>Baskets</h2>
         <Button
           label="Create Basket"
           ariaLabel="create basket"
@@ -13,6 +13,7 @@ const BasketDetails = () => {
           type="button"
         />
       </div>
+      <BasketTabs />
     </section>
   );
 };

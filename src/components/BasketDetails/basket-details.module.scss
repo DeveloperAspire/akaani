@@ -7,7 +7,12 @@
   margin-top: toRem(50px);
 
   &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: toRem(15px);
   }
   &__title {
+    @include h2;
   }
 }
