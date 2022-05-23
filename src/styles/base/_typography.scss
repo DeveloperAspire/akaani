@@ -1,0 +1,12 @@
+@import "../abstracts/functions";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+@mixin h1 {
+  font-family: Poppins;
+  font-size: toRem(31px);
+  font-weight: 600;
+  line-height: toRem(47px);
+  letter-spacing: 0em;
+  text-align: left;
+}
