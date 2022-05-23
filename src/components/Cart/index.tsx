@@ -20,12 +20,15 @@ const Cart: React.FC<CartProps> = ({ showCart, displayCart }) => {
         </span>
 
         <h3>My Cart</h3>
-        <Button
-          ariaLabel="cart"
-          variant="cart"
-          type="button"
-          icon="shoppingBasket"
-        />
+        <span className={styles["cart__button"]}>
+          <span className={styles["cart__number"]}>4</span>
+          <Button
+            ariaLabel="cart"
+            variant="cart"
+            type="button"
+            icon="shoppingBasket"
+          />
+        </span>
       </div>
       <div className={styles["cart__items"]}>
         <CartItem

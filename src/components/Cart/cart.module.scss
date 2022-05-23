@@ -27,6 +27,10 @@
     align-items: center;
     padding-right: toRem(10px);
 
+    & > span {
+      cursor: pointer;
+    }
+
     & h3 {
       @include cart-title;
     }
@@ -37,6 +41,23 @@
     display: grid;
     grid-template-rows: toRem(110px) toRem(110px) toRem(110px) toRem(110px);
     row-gap: toRem(10px);
+  }
+
+  &__button {
+    position: relative;
+  }
+  &__number {
+    position: absolute;
+    right: -10px;
+    top: -2px;
+    width: toRem(17px);
+    height: toRem(17px);
+    background-color: $col-white;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: toRem(10px);
   }
 
   &__checkout {

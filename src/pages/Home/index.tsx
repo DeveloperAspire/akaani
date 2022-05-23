@@ -9,7 +9,7 @@ import {
 import styles from "./home.module.scss";
 
 const Home = () => {
-  const [showCart, setShowCart] = useState(false);
+  const [showCart, setShowCart] = useState(true);
 
   const displayCart = () => {
     setShowCart(!showCart);
@@ -19,9 +19,10 @@ const Home = () => {
       <NavBar />
       <Dashboard />
       <NotificationBar />
-      <Cart showCart={showCart} displayCart={displayCart}/>
+      <Cart showCart={showCart} displayCart={displayCart} />
 
       <div className={styles["home__cart"]}>
+        <span className={styles["home__cart-number"]}>4</span>
         <Button
           ariaLabel="cart"
           variant="cart"
