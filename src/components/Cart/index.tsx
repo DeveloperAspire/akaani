@@ -1,4 +1,4 @@
-import { Icon, Button } from "../";
+import { Icon, Button, CartItem } from "../";
 
 import styles from "./cart.module.scss";
 
@@ -15,7 +15,32 @@ const Cart = () => {
           icon="shoppingBasket"
         />
       </div>
-      <div className={styles["cart__items"]}></div>
+      <div className={styles["cart__items"]}>
+        <CartItem
+          name="Okazi Leaves"
+          price="30"
+          quantity="1 kg"
+          userInitials="M"
+        />
+        <CartItem
+          name="Okazi Leaves"
+          price="120"
+          quantity="4 kg"
+          userInitials="R"
+        />
+        <CartItem
+          name="Rice & Beans"
+          price="50"
+          quantity="1 kg"
+          userInitials="M"
+        />
+        <CartItem
+          name="Efo Stew Leaves"
+          price="45"
+          quantity="1 kg"
+          userInitials="M"
+        />
+      </div>
       <div className={styles["cart__checkout"]}>
         <div className={styles["cart__checkout-container"]}>
           <p className={styles["cart__checkout-title"]}>Total</p>

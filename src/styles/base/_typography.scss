@@ -106,3 +106,10 @@
   line-height: toRem(23px);
   letter-spacing: 0em;
 }
+
+@mixin text-light-2 {
+  font-size: toRem(12px);
+  font-weight: 400;
+  line-height: toRem(18px);
+  letter-spacing: 0em;
+}

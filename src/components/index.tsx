@@ -8,3 +8,4 @@ export { default as BasketDetails } from "./BasketDetails";
 export { default as Button } from "./Button";
 export { default as BasketTabs } from "./BasketTabs";
 export { default as Cart } from "./Cart";
+export { default as CartItem } from "./CartItem";

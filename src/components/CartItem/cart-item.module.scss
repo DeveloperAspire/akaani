@@ -1,0 +1,55 @@
+@import "../../styles/abstracts/functions";
+@import "../../styles/abstracts/variables";
+@import "../../styles/abstracts/mixins";
+@import "../../styles/base/typography";
+
+.cart-item {
+  // height: toRem(110px);
+  border-radius: toRem(13px);
+  background-color: $col-light-blue;
+  padding: toRem(23px) toRem(20px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 20% 30% 30% 20%;
+
+  &__image {
+    width: toRem(70px);
+    height: toRem(70px);
+    border-radius: 50%;
+    padding: toRem(15px);
+    background-color: $col-blue;
+  }
+  &__details {
+  }
+  &__quantity {
+    & select {
+      width: toRem(100px);
+      background-color: $col-white;
+      height: toRem(26px);
+      border-radius: toRem(5px);
+      padding: 0 toRem(9px);
+      border: none;
+    }
+  }
+  &__name {
+    @include text-light-2;
+    color: $col-dark-3;
+  }
+  &__price {
+    @include stats-value;
+  }
+  &__user {
+    color: $col-white;
+    width: toRem(30px);
+    height: toRem(30px);
+    background-color: $col-cyan-dark;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    border-radius: 50%;
+    margin-left: toRem(60px);
+    text-transform: uppercase;
+  }
+}
