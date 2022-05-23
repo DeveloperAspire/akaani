@@ -9,7 +9,7 @@ import {
 import styles from "./home.module.scss";
 
 const Home = () => {
-  const [showCart, setShowCart] = useState(true);
+  const [showCart, setShowCart] = useState(false);
 
   const displayCart = () => {
     setShowCart(!showCart);
