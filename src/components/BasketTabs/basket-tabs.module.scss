@@ -10,7 +10,7 @@
   margin-top: toRem(20px);
 
   &__tabs {
-    padding: 15px;
+    padding: toRem(15px);
     text-align: center;
     width: 50%;
     cursor: pointer;
@@ -30,11 +30,11 @@
       content: "";
       display: block;
       position: absolute;
-      bottom: -3px;
+      bottom: toRem(-3px);
       left: 50%;
       transform: translateX(-50%);
       width: calc(100% + 2px);
-      height: 3px;
+      height: toRem(3px);
       background: $col-primary-light;
     }
   }
@@ -52,7 +52,7 @@
   }
   &__content {
     background: white;
-    padding: 20px;
+    padding: toRem(20px);
     width: 100%;
     padding: toRem(79px);
     height: 100%;
