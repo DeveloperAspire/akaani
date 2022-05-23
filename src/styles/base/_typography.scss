@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 @mixin h1 {
-  font-size: toRem(31px);
+  font-size: toRem(35px);
   font-weight: 600;
   line-height: toRem(47px);
   letter-spacing: 0em;
@@ -39,5 +39,11 @@
   font-size: toRem(16px);
   font-weight: 600;
   line-height: toRem(24px);
+  letter-spacing: 0em;
+}
+@mixin input-text {
+  font-size: toRem(14px);
+  font-weight: 300;
+  line-height: toRem(21px);
   letter-spacing: 0em;
 }

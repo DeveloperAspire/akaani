@@ -1,0 +1,29 @@
+@import "../../styles/abstracts/functions";
+@import "../../styles/abstracts/variables";
+@import "../../styles/abstracts/mixins";
+@import "../../styles/base/typography";
+
+.controller {
+  border: 1px solid $col-grey-light;
+  //   overflow: hidden;
+  width: toRem(254px);
+  display: grid;
+  grid-template-columns: 10% 90%;
+  align-items: center;
+  padding: toRem(7px) toRem(10px);
+  height: toRem(40px);
+  border-radius: toRem(6px);
+
+  & input {
+    border: none;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    @include input-text;
+
+    &::placeholder {
+      color: $col-grey-light-3;
+    }
+  }
+}

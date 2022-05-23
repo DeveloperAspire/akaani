@@ -6,6 +6,7 @@ import { ReactComponent as Truck } from "../assets/icons/truck.svg";
 import { ReactComponent as User } from "../assets/icons/user-icon.svg";
 import { ReactComponent as LogOut } from "../assets/icons/logout.svg";
 import { ReactComponent as Logo } from "../assets/icons/logo.svg";
+import { ReactComponent as Search } from "../assets/icons/search.svg";
 
 export type IconType =
   | "creditCard"
@@ -15,7 +16,8 @@ export type IconType =
   | "truck"
   | "user"
   | "logout"
-  | "logo";
+  | "logo"
+  | "search";
 
 export const icons: Record<IconType, JSX.Element> = {
   creditCard: <CreditCard />,
@@ -26,4 +28,5 @@ export const icons: Record<IconType, JSX.Element> = {
   user: <User />,
   logout: <LogOut />,
   logo: <Logo />,
+  search: <Search />,
 };

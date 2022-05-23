@@ -1,0 +1,19 @@
+@import "../../styles/abstracts/functions";
+@import "../../styles/abstracts/variables";
+@import "../../styles/abstracts/mixins";
+@import "../../styles/base/typography";
+
+.dashboard {
+  padding: toRem(43px) toRem(25px);
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: toRem(85px);
+  }
+
+  &__title {
+    @include h1;
+  }
+}
